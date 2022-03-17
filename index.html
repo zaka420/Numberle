@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html id="backgroundImage">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chango">
+    </head>
+    <header>
+        <h1 id="mainTitle">Numberle</h1>
+    </header>
+    <body>
+        <div style="display:block; margin-left:auto; margin-right:auto;">
+        <div id="firstGuessRow">
+            <label id="firstRowOne"></label>
+            <label id="firstRowTwo"></label>
+            <label id="firstRowThree"></label>
+            <label id="firstRowFour"></label>
+            <label id="firstRowFive"></label>
+        </div>
+        <div id="secondGuessRow">
+            <label id="secondRowOne"></label>
+            <label id="secondRowTwo"></label>
+            <label id="secondRowThree"></label>
+            <label id="secondRowFour"></label>
+            <label id="secondRowFive"></label>
+        </div>
+        <div id="thirdGuessRow">
+            <label id="thirdRowOne"></label>
+            <label id="thirdRowTwo"></label>
+            <label id="thirdRowThree"></label>
+            <label id="thirdRowFour"></label>
+            <label id="thirdRowFive"></label>
+        </div>
+        <div id="fourthGuessRow">
+            <label id="fourthRowOne"></label>
+            <label id="fourthRowTwo"></label>
+            <label id="fourthRowThree"></label>
+            <label id="fourthRowFour"></label>
+            <label id="fourthRowFive"></label>
+        </div>
+        <div id="fifthGuessRow">
+            <label id="fifthRowOne"></label>
+            <label id="fifthRowTwo"></label>
+            <label id="fifthRowThree"></label>
+            <label id="fifthRowFour"></label>
+            <label id="fifthRowFive"></label>
+        </div>
+        <div id="guessButtonAndNumbersRow">
+            <h1 class="guessButtonAndNumbers" id="guessButton" onclick="firstGuess()">&#x2714;</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputOne()">1</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputTwo()">2</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputThree()">3</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputFour()">4</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputFive()">5</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputSix()">6</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputSeven()">7</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputEight()">8</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputNine()">9</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputZero()">0</h1>
+            <h1 class="guessButtonAndNumbers" onclick="inputBack()">&#x2716;</h1>
+        </div>
+        </div>
+    </body>
+    <footer>
+        <div id="tutorialDisplay" onclick="tutorialRemove()"><h2>Guess a random 5 digit number.<br>Any number with a green background after a guess means it is the correct number in the right spot.<br>Any number with a yellow background after a guess means it is the correct number in the wrong spot.<br>Any number with a gray background after a guess means it is not in the final answer.</h2></div>
+    </footer>
+    <script src="script.js"></script>
+</html>
